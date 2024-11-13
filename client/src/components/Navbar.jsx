@@ -8,7 +8,7 @@ export default function Navbar() {
   const path = location.pathname.split("/");
 
   return (
-    <div className="flex justify-between items-center px-5 sm:px-10 lg:px-24  bg-bgLight h-16 ">
+    <div className="flex justify-between items-center px-5 sm:px-10 lg:px-24  bg-bgLight h-16 w-full">
       <span className="text-4xl font-bold text-white ">GenAi</span>
       {path[1] === "post" ? (
         <Button handleClick={() => navigate("/")} type="secondary">
